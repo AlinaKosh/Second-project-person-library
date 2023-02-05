@@ -11,7 +11,7 @@
 <div th:if="${person}">
   <span>Книга сейчас у: </span> <span th:text="${person.getName()}">Person Name</span>
 
-  <form th:method="PATCH" th:action="@{/books/{id}/year_release(id=${book.getId()})}">
+  <form th:method="PATCH" th:action="@{/books/{id}/year(id=${book.getId()})}">
     <input type="submit" value="Освободить книгу"/>
   </form>
 </div>
